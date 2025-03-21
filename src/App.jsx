@@ -7,6 +7,7 @@ import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom'
 import Home from './pages/Home'
 import About from './pages/About'
 import Work from './pages/Work'
+import Abercrombie from './pages/Abercrombie'
 
 import styled from 'styled-components'
 
@@ -53,6 +54,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/work" element={<Work />} />
+        <Route path='/work/abercrombie' element={<Abercrombie/>} />
       </Routes>
     </Router>
 

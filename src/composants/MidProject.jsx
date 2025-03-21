@@ -30,7 +30,7 @@ const SemiPhoto = styled.div`
 
 `
 
-const SemiBigProj = styled.div`
+const SemiBigProj = styled.a`
 display: flex;
 width : 49%;
 flex-direction: column;
@@ -39,9 +39,9 @@ gap: 6px;
 `
 
 // Le composant MyBlock reçoit des props (title, description, imageUrl)
-export default function MidProject({ Branding, Project, imageUrl, TL, DescriptionText }) {
+export default function MidProject({ to,Branding, Project, imageUrl, TL, DescriptionText }) {
   return (
-        <SemiBigProj>
+        <SemiBigProj href={to}>
             <Credit>
                 <Type>
                     <p className='Small-text'>Type</p>

@@ -31,6 +31,7 @@ align-self: stretch;;
 
         <TwoProj>
             <MidProject
+                to= "/work/abercrombie"
                 Branding= "Branding"
                 Project="Abercrombie"
                 imageUrl="/image.png"
