@@ -34,15 +34,16 @@ align-self: stretch;;
                 to= "/work/abercrombie"
                 Branding= "Branding"
                 Project="Abercrombie"
-                imageUrl="/image.png"
+                imageUrl="/Abercrombie-v2.png"
                 TL="10/2024"
                 DescriptionText="A modern redesign of the logo and visual identity to appeal to a younger generation while maintaining the brand’s iconic essence."
             />
 
             <MidProject
+                to= "/work/Scentify"
                 Branding= "Branding"
                 Project="Abercrombie"
-                imageUrl="/image copy.png"
+                imageUrl="/Scientify.png"
                 TL="10/2024"
                 DescriptionText="A modern redesign of the logo and visual identity to appeal to a younger generation while maintaining the brand’s iconic essence."
             />
@@ -53,7 +54,7 @@ align-self: stretch;;
             <SmallProject
                 Branding= "Branding"
                 Project="Abercrombie"
-                imageUrl="/image copy.png"
+                imageUrl="/Abercrombie.png"
                 TL="10/2024"
                 DescriptionText="A modern redesign of the logo and visual identity to appeal to a younger generation while maintaining the brand’s iconic essence."
             />
@@ -61,7 +62,7 @@ align-self: stretch;;
             <SmallProject
                 Branding= "Branding"
                 Project="Abercrombie"
-                imageUrl="/image copy.png"
+                imageUrl="/Serinity.png"
                 TL="10/2024"
                 DescriptionText="A modern redesign of the logo and visual identity to appeal to a younger generation while maintaining the brand’s iconic essence."
             />
@@ -70,7 +71,7 @@ align-self: stretch;;
             <SmallProject
                 Branding= "Branding"
                 Project="Abercrombie"
-                imageUrl="/image copy.png"
+                imageUrl="/Okane.png"
                 TL="10/2024"
                 DescriptionText="A modern redesign of the logo and visual identity to appeal to a younger generation while maintaining the brand’s iconic essence."
             />

@@ -2,15 +2,15 @@ import React from 'react'
 import styled from 'styled-components'
 import ProjectTitle from '../composants/ProjectTitle'
 
-export default function Abercrombie() {
+export default function Scientify() {
     return (
         <>
             <h1 className="Title">ABERCROMBIE<span className="CAPS-Small-text">[1]</span></h1>
 
             <ProjectTitle
                 Branding= "Branding"
-                Project="Abercrombie"
-                imageUrl="/Abercrombie-Full.png"
+                Project="Scientify"
+                imageUrl="/Scientify.png"
                 DescriptionText="This project focused on modernizing the brand’s image with a bold, dynamic logo that stays true to its heritage while appealing to a younger audience."
             />
             
@@ -23,7 +23,7 @@ export default function Abercrombie() {
             <div>
                 <h2 className="H2">FIGMA FILE</h2>
                 <div>
-                    <iframe className='iframe'  width="100%" height="750" src="https://embed.figma.com/design/x6fJEeT9m0G4JBOJ9Bn8Fr/Abercrombie---branding?node-id=1-4&embed-host=share" allowfullscreen></iframe>
+                    <iframe className='iframe'  width="100%" height="750" src="https://embed.figma.com/design/9TTnKyWP92BjJjJJHRpFEc/Scentify?node-id=0-1&embed-host=share" allowfullscreen></iframe>
                 </div>
             </div>
             

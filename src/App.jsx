@@ -8,8 +8,11 @@ import Home from './pages/Home'
 import About from './pages/About'
 import Work from './pages/Work'
 import Abercrombie from './pages/Abercrombie'
+import Scentify from './pages/Scentify'
+
 
 import styled from 'styled-components'
+import Scientify from './pages/Scentify'
 
 
 
@@ -55,6 +58,8 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/work" element={<Work />} />
         <Route path='/work/abercrombie' element={<Abercrombie/>} />
+        <Route path='/work/Scentify' element={<Scentify/>} />
+
       </Routes>
     </Router>
 
