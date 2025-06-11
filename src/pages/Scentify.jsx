@@ -27,9 +27,6 @@ export default function Scientify() {
                 </div>
             </div>
             
-
-
-
         </>
     )
   }
