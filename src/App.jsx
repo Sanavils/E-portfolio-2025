@@ -24,6 +24,8 @@ justify-content: space-between;
 align-items: center;
 margin-bottom: 114px;
 
+  position: relative;
+  z-index: 1;
 `
 const NavLink = styled.a`
 text-align: center;
