@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Calque_1" data-name="Calque 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080">
+  <defs>
+    <style>
+      .cls-1 {
+        font-family: NeueMontreal-Bold, 'Neue Montreal';
+        font-size: 101px;
+        font-weight: 700;
+      }
+
+      .cls-2 {
+        letter-spacing: -.02em;
+      }
+
+      .cls-3 {
+        letter-spacing: 0em;
+      }
+
+      .cls-4 {
+        letter-spacing: 0em;
+      }
+
+      .cls-5 {
+        letter-spacing: 0em;
+      }
+    </style>
+  </defs>
+  <g>
+    <polyline points="331.12 769.13 330.81 914.19 184.85 914.19 184.85 630.32 622.72 630.32 622.72 148.6 768.67 148.6 768.67 914.19 622.72 914.19 622.72 767.96"/>
+    <polyline points="185.12 484.13 184.85 148.6 330.81 148.6 330.81 484.09"/>
+  </g>
+  <text class="cls-1" transform="translate(877.17 914.31) rotate(-90)"><tspan class="cls-3" x="0" y="0">H</tspan><tspan class="cls-2" x="69.99" y="0">A</tspan><tspan class="cls-4" x="138.87" y="0">S</tspan><tspan x="205.23" y="0">SEN AR</tspan><tspan class="cls-5" x="561.05" y="0">K</tspan><tspan x="632.45" y="0">AB</tspan></text>
+</svg>
