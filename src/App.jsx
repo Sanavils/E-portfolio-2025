@@ -28,8 +28,8 @@ align-items: center;
   z-index: 1;
 
   @media (max-width: 768px) {
-    flex-direction: column;
-    align-items: flex-start;
+    
+    
     gap: 16px;
   }
 `
@@ -65,7 +65,7 @@ function App() {
         <div className='NavLinks'>
           <Link to="/work"><NavLink>Work</NavLink></Link>
           <p><NavLink>/</NavLink></p>
-          <Link to="/about"><NavLink>À propos</NavLink></Link>
+         
           <p><NavLink>/</NavLink></p>
           <Link to="/mail"><NavLink>Mail</NavLink></Link>
         </div>

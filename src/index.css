@@ -226,21 +226,20 @@ opacity: 1 !important;}
 
   .fond-couleur {
     width: 100%;
-    height: 300px;
+    height: 900px;
   }
 
   .pres {
-    margin-top: 300px;
+    margin-top: 900px;
   }
 
   .socials {
-    flex-direction: column;
+
     align-items: flex-start;
     gap: 8px;
   }
 
   .arrow-link {
-    flex-direction: column;
     gap: 8px;
   }
 
