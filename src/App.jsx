@@ -22,7 +22,7 @@ const NavBar = styled.nav`
 
 justify-content: space-between;
 align-items: center;
-margin-bottom: 114px;
+
 
   position: relative;
   z-index: 1;
@@ -37,6 +37,16 @@ line-height: normal;
 text-transform: uppercase;
 `
 
+const StyledLink = styled(Link)`
+  text-align: center;
+  font-family: "Neue Montreal";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: uppercase;
+`
+
 function App() {
 
 
@@ -44,7 +54,8 @@ function App() {
     <>
     <Router>
       <NavBar> 
-        <Link to="/"><NavLink>Accueil</NavLink></Link>
+        <StyledLink to="/"><img src="/logo.png" alt="" width="auto" height="90"/></StyledLink>
+        <Link to="/"><NavLink><img src="/vite.svg" alt="" /></NavLink></Link>
         <div className='NavLinks'>
           <Link to="/work"><NavLink>Work</NavLink></Link>
           <p><NavLink>/</NavLink></p>

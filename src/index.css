@@ -144,8 +144,57 @@ gap: 114px;
   position: absolute;
   top: 0%;
   right: 0%;
-
+  overflow: hidden;
 
 
   z-index: -1;
+
 }
+
+.video-fond {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+  display: block;
+  pointer-events: none;   /* empêche tout clic/interactions */
+  user-select: none;
+  z-index: -2;
+}
+
+.pres{
+  margin-top:900px;
+}
+
+
+.ligne{
+    margin-bottom: 24px;
+    border: 1px solid #000;
+     margin-top: 116px;
+}
+.ligne2{
+    border: 1px solid #000;
+    margin-bottom: 12px;
+    margin-top: 12px;
+}
+
+.socials{
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.01em;
+    text-transform: capitalize;
+    justify-content: space-around;
+    
+    color: #626262;
+   
+}
+
+.arrow-link{
+  display: flex;
+justify-content: space-between;
+align-items: center;
+align-self: stretch;
+}
+
+video::-webkit-media-controls-panel {
+display: none !important;
+opacity: 1 !important;}
