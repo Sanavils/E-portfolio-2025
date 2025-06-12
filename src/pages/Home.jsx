@@ -10,7 +10,12 @@ export default function Home() {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  align-self: stretch;;
+  align-self: stretch;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    gap: 24px;
+  }
   `
 
   const ThreeProj = styled.div`
@@ -18,6 +23,11 @@ export default function Home() {
   justify-content: space-between;
   align-items: flex-start;
   align-self: stretch;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    gap: 24px;
+  }
   `
 
     return (

@@ -198,3 +198,55 @@ align-self: stretch;
 video::-webkit-media-controls-panel {
 display: none !important;
 opacity: 1 !important;}
+
+/* Responsive rules for smaller screens */
+@media (max-width: 768px) {
+  body {
+    padding: 20px;
+  }
+
+  .Title {
+    font-size: 48px;
+  }
+
+  .H2 {
+    font-size: 24px;
+  }
+
+  .Text,
+  .Caps-text,
+  .Small-text,
+  .CAPS-Small-text {
+    font-size: 16px;
+  }
+
+  .overview {
+    width: 100%;
+  }
+
+  .fond-couleur {
+    width: 100%;
+    height: 300px;
+  }
+
+  .pres {
+    margin-top: 300px;
+  }
+
+  .socials {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .arrow-link {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .NavLinks {
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+}
+

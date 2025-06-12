@@ -32,10 +32,14 @@ const SemiPhoto = styled.div`
 
 const SemiBigProj = styled.a`
 display: flex;
-width : 49%;
+width: 49%;
 flex-direction: column;
 align-items: flex-start;
 gap: 6px;
+
+@media (max-width: 768px) {
+  width: 100%;
+}
 `
 
 // Le composant MyBlock reçoit des props (title, description, imageUrl)

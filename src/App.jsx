@@ -26,6 +26,12 @@ align-items: center;
 
   position: relative;
   z-index: 1;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
 `
 const NavLink = styled.a`
 text-align: center;
