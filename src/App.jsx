@@ -29,7 +29,7 @@ align-items: center;
 
   @media (max-width: 768px) {
     
-    
+    align-items: flex-start;
     gap: 16px;
   }
 `
@@ -58,9 +58,9 @@ function App() {
 
   return (
     <>
-    <Router>
+    
       <NavBar> 
-        <StyledLink to="/"><img src="/logo.png" alt="" width="auto" height="90"/></StyledLink>
+        <StyledLink to="/"><img src="/E-portfolio-2025//logo.png" alt="" width="auto" height="90"/></StyledLink>
         <Link to="/"><NavLink><img src="/vite.svg" alt="" /></NavLink></Link>
         <div className='NavLinks'>
           <Link to="/work"><NavLink>Work</NavLink></Link>
@@ -80,7 +80,7 @@ function App() {
         <Route path='/work/Scentify' element={<Scentify/>} />
 
       </Routes>
-    </Router>
+    
 
    
     </>

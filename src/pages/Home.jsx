@@ -10,34 +10,24 @@ export default function Home() {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  align-self: stretch;
-
-  @media (max-width: 768px) {
-    flex-direction: column;
-    gap: 24px;
-  }
+  align-self: stretch;;
   `
 
   const ThreeProj = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  align-self: stretch;
-
-  @media (max-width: 768px) {
-    flex-direction: column;
-    gap: 24px;
-  }
+  align-self: stretch;;
   `
 
     return (
       <>
         <div className="fond-couleur">
           <video className="video-fond" controls autoPlay muted loop playsInline>
-            <source src="/v1.mp4" type="video/mp4" />
+            <source src="/E-portfolio-2025//v1.mp4" type="video/mp4" />
           </video>
         </div>
-        
+         
         <section className='contenu'>
           <h1 className="Title pres">Hello<span className="CAPS-Small-text">[^-^]</span></h1>
           <h2 className="H2" style={{ marginBottom: '116px'}}>My name is HASSEN<br></br>And i’m a UI/UX DESIGNER</h2>
@@ -55,18 +45,18 @@ export default function Home() {
         <section style={{ marginBottom: '116px'}}>
           <h2 className="Title ">Needing a rebranding ?</h2>
           <a href='' className='arrow-link'>
-            <a className="H2">My previous projects</a>
-            <img src="/fleche.svg" alt="" />
+            <a className="H2">My previous projects</a> 
+            <img src="/E-portfolio-2025/fleche.svg" alt="" />
           </a>
           
           <div className='ligne2'></div>
           <a href='' className='arrow-link' style={{ marginBottom: '116px'}}>
             <a className="H2" >DROP ME AN EMAIL</a>
-            <img src="/fleche.svg" alt="" />
+            <img src="/E-portfolio-2025/fleche.svg" alt="" />
           </a>
           
           <video className="video-fond" controls autoPlay muted loop playsInline style={{ marginTop: '116px'}}>
-            <source src="/v2.mp4" type="video/mp4" />
+            <source src="/E-portfolio-2025/v2.mp4" type="video/mp4" />
           </video>
 
         </section>
@@ -76,7 +66,7 @@ export default function Home() {
                     <SmallProject
                         Branding= "Branding"
                         Project="Abercrombie"
-                        imageUrl="/Abercrombie.png"
+                        imageUrl="/E-portfolio-2025/Abercrombie.png"
                         TL="10/2024"
                         DescriptionText="A modern redesign of the logo and visual identity to appeal to a younger generation while maintaining the brand’s iconic essence."
                     />
@@ -84,7 +74,7 @@ export default function Home() {
                     <SmallProject
                         Branding= "Branding"
                         Project="Abercrombie"
-                        imageUrl="/Serinity.png"
+                        imageUrl="/E-portfolio-2025/Serinity.png"
                         TL="10/2024"
                         DescriptionText="A modern redesign of the logo and visual identity to appeal to a younger generation while maintaining the brand’s iconic essence."
                     />
@@ -93,7 +83,7 @@ export default function Home() {
                     <SmallProject
                         Branding= "Branding"
                         Project="Abercrombie"
-                        imageUrl="/Okane.png"
+                        imageUrl="/E-portfolio-2025/Okane.png"
                         TL="10/2024"
                         DescriptionText="A modern redesign of the logo and visual identity to appeal to a younger generation while maintaining the brand’s iconic essence."
                     />
