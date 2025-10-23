@@ -1,90 +1,82 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom'
+import { Routes, Route, Link } from 'react-router-dom'
 import Home from './pages/Home'
 import About from './pages/About'
 import Work from './pages/Work'
 import Abercrombie from './pages/Abercrombie'
 import Scentify from './pages/Scentify'
 
-
 import styled from 'styled-components'
-import Scientify from './pages/Scentify'
 
-
-
-
-const NavBar = styled.nav`
-  display: flex;
-
-justify-content: space-between;
-align-items: center;
-
-
-  position: relative;
-  z-index: 1;
-
-  @media (max-width: 768px) {
-    
-    align-items: flex-start;
-    gap: 16px;
-  }
-`
-const NavLink = styled.a`
-text-align: center;
-font-family: "Neue Montreal";
-font-size: 24px;
-font-style: normal;
-font-weight: 500;
-line-height: normal;
-text-transform: uppercase;
-`
-
+// ✅ un vrai lien stylé basé sur Link (pas <a> dans <Link>)
 const StyledLink = styled(Link)`
   text-align: center;
   font-family: "Neue Montreal";
   font-size: 24px;
-  font-style: normal;
   font-weight: 500;
-  line-height: normal;
   text-transform: uppercase;
-`
+  line-height: normal;
+  text-decoration: none;
+`;
+
+// ✅ texte non cliquable
+const NavText = styled.span`
+  text-align: center;
+  font-family: "Neue Montreal";
+  font-size: 24px;
+  font-weight: 500;
+  text-transform: uppercase;
+  line-height: normal;
+`;
+
+const NavBar = styled.nav`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+
+  @media (max-width: 768px) {
+    align-items: flex-start;
+    gap: 16px;
+  }
+`;
 
 function App() {
-
+  // ✅ chemins robustes (local + GitHub Pages)
+  const logoSrc = `${import.meta.env.BASE_URL}logo.png`;
+  const viteIcon = `${import.meta.env.BASE_URL}vite.svg`;
 
   return (
     <>
-    
-      <NavBar> 
-        <StyledLink to="/"><img src="/E-portfolio-2025//logo.png" alt="" width="auto" height="90"/></StyledLink>
-        <Link to="/"><NavLink><img src="/vite.svg" alt="" /></NavLink></Link>
-        <div className='NavLinks'>
-          <Link to="/work"><NavLink>Work</NavLink></Link>
-          <p><NavLink>/</NavLink></p>
-         
-          <p><NavLink>/</NavLink></p>
-          <Link to="/mail"><NavLink>Mail</NavLink></Link>
+      <NavBar>
+        {/* Logo → home */}
+        <StyledLink to="/">
+          <img src={logoSrc} alt="Sanavils" height="90" />
+        </StyledLink>
+
+        {/* Exemple d’icône */}
+        <StyledLink to="/">
+          <img src={viteIcon} alt="Home" />
+        </StyledLink>
+
+        <div className="NavLinks" style={{ display: 'flex', gap: 12, alignItems: 'center' }}>
+          <StyledLink to="/work">Work</StyledLink>
+          <NavText>/</NavText>
+          <StyledLink to="/about">About</StyledLink>
+          <NavText>/</NavText>
+          <StyledLink to="/mail">Mail</StyledLink>
         </div>
-        
       </NavBar>
 
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/work" element={<Work />} />
-        <Route path='/work/abercrombie' element={<Abercrombie/>} />
-        <Route path='/work/Scentify' element={<Scentify/>} />
-
+        <Route path="/work/abercrombie" element={<Abercrombie />} />
+        <Route path="/work/Scentify" element={<Scentify />} />
       </Routes>
-    
-
-   
     </>
-  )
+  );
 }
 
-export default App
+export default App;
