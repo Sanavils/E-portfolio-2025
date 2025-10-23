@@ -17,7 +17,7 @@ export default function Home() {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  align-self: stretch;;
+  align-self: stretch;
   `
 
     return (

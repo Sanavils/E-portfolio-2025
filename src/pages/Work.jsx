@@ -41,19 +41,19 @@ align-self: stretch;;
 
         <TwoProj>
             <MidProject
-                to= "/work/abercrombie"
+                to= "#/work/abercrombie"
                 Branding= "Branding"
                 Project="Abercrombie"
-                imageUrl="/Abercrombie-v2.png"
+                imageUrl="../public/Abercrombie-v2.png"
                 TL="10/2024"
                 DescriptionText="A modern redesign of the logo and visual identity to appeal to a younger generation while maintaining the brand’s iconic essence."
             />
 
             <MidProject
-                to= "/work/Scentify"
+                to= "/E-portfolio-2025/work/Scentify"
                 Branding= "Branding"
-                Project="Abercrombie"
-                imageUrl="/Scientify.png"
+                Project="Scentify"
+                imageUrl="../public/Scientify.png"
                 TL="10/2024"
                 DescriptionText="A modern redesign of the logo and visual identity to appeal to a younger generation while maintaining the brand’s iconic essence."
             />
@@ -64,15 +64,15 @@ align-self: stretch;;
             <SmallProject
                 Branding= "Branding"
                 Project="Abercrombie"
-                imageUrl="/Abercrombie.png"
+                imageUrl="../public/Serinity.png"
                 TL="10/2024"
                 DescriptionText="A modern redesign of the logo and visual identity to appeal to a younger generation while maintaining the brand’s iconic essence."
             />
 
             <SmallProject
                 Branding= "Branding"
-                Project="Abercrombie"
-                imageUrl="/Serinity.png"
+                Project="Abercrombie V2"
+                imageUrl="../public/Abercrombie.png"
                 TL="10/2024"
                 DescriptionText="A modern redesign of the logo and visual identity to appeal to a younger generation while maintaining the brand’s iconic essence."
             />
@@ -81,7 +81,7 @@ align-self: stretch;;
             <SmallProject
                 Branding= "Branding"
                 Project="Abercrombie"
-                imageUrl="/Okane.png"
+                imageUrl="../public/Okane.png"
                 TL="10/2024"
                 DescriptionText="A modern redesign of the logo and visual identity to appeal to a younger generation while maintaining the brand’s iconic essence."
             />
@@ -91,7 +91,7 @@ align-self: stretch;;
         <BigProject
                 Branding= "Branding"
                 Project="Abercrombie"
-                imageUrl="/image copy 2.png"
+                imageUrl="../public/image copy 2.png"
                 TL="10/2024"
                 DescriptionText="A modern redesign of the logo and visual identity to appeal to a younger generation while maintaining the brand’s iconic essence."
             />
