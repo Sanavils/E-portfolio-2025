@@ -56,7 +56,7 @@ export default function Home() {
           </a>
           
           <video className="video-fond" controls autoPlay muted loop playsInline style={{ marginTop: '116px'}}>
-            <source src="/E-portfolio-2025/v2.mp4" type="video/mp4" />
+            <source src="/E-portfolio-2025/LV.mp4" type="video/mp4" />
           </video>
 
         </section>

@@ -44,7 +44,7 @@ align-self: stretch;;
                 to= "#/work/abercrombie"
                 Branding= "Branding"
                 Project="Abercrombie"
-                imageUrl="../public/Abercrombie-v2.png"
+                imageUrl="./Abercrombie-v2.png"
                 TL="10/2024"
                 DescriptionText="A modern redesign of the logo and visual identity to appeal to a younger generation while maintaining the brand’s iconic essence."
             />
@@ -53,7 +53,7 @@ align-self: stretch;;
                 to= "/E-portfolio-2025/work/Scentify"
                 Branding= "Branding"
                 Project="Scentify"
-                imageUrl="../public/Scientify.png"
+                imageUrl="./Scientify.png"
                 TL="10/2024"
                 DescriptionText="A modern redesign of the logo and visual identity to appeal to a younger generation while maintaining the brand’s iconic essence."
             />
@@ -64,7 +64,7 @@ align-self: stretch;;
             <SmallProject
                 Branding= "Branding"
                 Project="Abercrombie"
-                imageUrl="../public/Serinity.png"
+                imageUrl="./Serinity.png"
                 TL="10/2024"
                 DescriptionText="A modern redesign of the logo and visual identity to appeal to a younger generation while maintaining the brand’s iconic essence."
             />
@@ -72,7 +72,7 @@ align-self: stretch;;
             <SmallProject
                 Branding= "Branding"
                 Project="Abercrombie V2"
-                imageUrl="../public/Abercrombie.png"
+                imageUrl="./Abercrombie.png"
                 TL="10/2024"
                 DescriptionText="A modern redesign of the logo and visual identity to appeal to a younger generation while maintaining the brand’s iconic essence."
             />
@@ -81,7 +81,7 @@ align-self: stretch;;
             <SmallProject
                 Branding= "Branding"
                 Project="Abercrombie"
-                imageUrl="../public/Okane.png"
+                imageUrl="./Okane.png"
                 TL="10/2024"
                 DescriptionText="A modern redesign of the logo and visual identity to appeal to a younger generation while maintaining the brand’s iconic essence."
             />
@@ -90,8 +90,8 @@ align-self: stretch;;
 
         <BigProject
                 Branding= "Branding"
-                Project="Abercrombie"
-                imageUrl="../public/image copy 2.png"
+                Project="Vanilla"
+                imageUrl="./image copy 2.png"
                 TL="10/2024"
                 DescriptionText="A modern redesign of the logo and visual identity to appeal to a younger generation while maintaining the brand’s iconic essence."
             />
