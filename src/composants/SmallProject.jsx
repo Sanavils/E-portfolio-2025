@@ -30,7 +30,7 @@ const SemiPhoto = styled.div`
 
 `
 
-const SemiBigProj = styled.div`
+const SemiBigProj = styled.a`
 display: flex;
 width: 32%;
 flex-direction: column;
@@ -42,9 +42,9 @@ gap: 6px;
 }
 `
 
-export default function SmallProject({ Branding, Project, imageUrl, TL, DescriptionText }) {
+export default function SmallProject({ to, Branding, Project, imageUrl, TL, DescriptionText }) {
     return (
-          <SemiBigProj>
+          <SemiBigProj href={to}>
               <Credit>
                   <Type>
                       <p className='Small-text'>Type</p>

@@ -44,13 +44,13 @@ export default function Home() {
         
         <section style={{ marginBottom: '116px'}}>
           <h2 className="Title ">Needing a rebranding ?</h2>
-          <a href='' className='arrow-link'>
+          <a href="/Work.jsx" className='arrow-link'>
             <a className="H2">My previous projects</a> 
             <img src="/E-portfolio-2025/fleche.svg" alt="" />
           </a>
           
           <div className='ligne2'></div>
-          <a href='' className='arrow-link' style={{ marginBottom: '116px'}}>
+          <a href='mailto:hassen.arkab.pro@gmail.com' className='arrow-link' style={{ marginBottom: '116px'}}>
             <a className="H2" >DROP ME AN EMAIL</a>
             <img src="/E-portfolio-2025/fleche.svg" alt="" />
           </a>

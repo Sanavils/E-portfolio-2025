@@ -41,7 +41,7 @@ align-self: stretch;;
 
         <TwoProj>
             <MidProject
-                to= "#/work/abercrombie"
+                to= "/E-portfolio-2025/work/Abercrombie"
                 Branding= "Branding"
                 Project="Abercrombie"
                 imageUrl="./Abercrombie-v2.png"
@@ -62,14 +62,16 @@ align-self: stretch;;
 
         <ThreeProj>
             <SmallProject
+                to= "/E-portfolio-2025/work/Serenity"
                 Branding= "Branding"
-                Project="Abercrombie"
+                Project="Serenity"
                 imageUrl="./Serinity.png"
                 TL="10/2024"
                 DescriptionText="A modern redesign of the logo and visual identity to appeal to a younger generation while maintaining the brand’s iconic essence."
             />
 
             <SmallProject
+                to= "/E-portfolio-2025/work/Abercombie_V2"
                 Branding= "Branding"
                 Project="Abercrombie V2"
                 imageUrl="./Abercrombie.png"
@@ -79,8 +81,9 @@ align-self: stretch;;
 
 
             <SmallProject
+                to= "/E-portfolio-2025/work/Abercombie_V2"
                 Branding= "Branding"
-                Project="Abercrombie"
+                Project="Okane"
                 imageUrl="./Okane.png"
                 TL="10/2024"
                 DescriptionText="A modern redesign of the logo and visual identity to appeal to a younger generation while maintaining the brand’s iconic essence."

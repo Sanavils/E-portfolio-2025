@@ -5,12 +5,12 @@ import ProjectTitle from '../composants/ProjectTitle'
 export default function Scientify() {
     return (
         <>
-            <h1 className="Title">ABERCROMBIE<span className="CAPS-Small-text">[1]</span></h1>
+            <h1 className="Title">Scentify<span className="CAPS-Small-text">[2]</span></h1>
 
             <ProjectTitle
                 Branding= "Branding"
                 Project="Scientify"
-                imageUrl="/Scientify.png"
+                imageUrl="/E-portfolio-2025/Scentify-full.png"
                 DescriptionText="This project focused on modernizing the brand’s image with a bold, dynamic logo that stays true to its heritage while appealing to a younger audience."
             />
             

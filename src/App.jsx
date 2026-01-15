@@ -4,6 +4,9 @@ import About from './pages/About'
 import Work from './pages/Work'
 import Abercrombie from './pages/Abercrombie'
 import Scentify from './pages/Scentify'
+import Serenity from './pages/Serenity'
+import Abercrombie_V2 from './pages/Abercombie_V2'
+
 
 import styled from 'styled-components'
 
@@ -74,6 +77,9 @@ function App() {
         <Route path="/work" element={<Work />} />
         <Route path="/work/abercrombie" element={<Abercrombie />} />
         <Route path="/work/Scentify" element={<Scentify />} />
+        <Route path="/work/Serenity" element={<Serenity />} />
+        <Route path="/work/abercombie_V2" element={<Abercrombie_V2 />} />
+
       </Routes>
     </>
   );
