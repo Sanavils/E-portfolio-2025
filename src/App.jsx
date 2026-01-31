@@ -6,6 +6,7 @@ import Abercrombie from './pages/Abercrombie'
 import Scentify from './pages/Scentify'
 import Serenity from './pages/Serenity'
 import Abercrombie_V2 from './pages/Abercombie_V2'
+import Vanilla from './pages/Vanilla'
 
 
 import styled from 'styled-components'
@@ -79,6 +80,7 @@ function App() {
         <Route path="/work/Scentify" element={<Scentify />} />
         <Route path="/work/Serenity" element={<Serenity />} />
         <Route path="/work/abercombie_V2" element={<Abercrombie_V2 />} />
+        <Route path="/work/Vanilla" element={<Vanilla />} />
 
       </Routes>
     </>

@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import { Link } from 'react-router-dom'
 
 const Credit = styled.div`
 display: flex;
@@ -30,7 +31,7 @@ const SemiPhoto = styled.div`
 
 `
 
-const SemiBigProj = styled.div`
+const SemiBigProj = styled.a`
 display: flex;
 width : 100%;
 flex-direction: column;
@@ -39,9 +40,9 @@ gap: 6px;
 `
 
 // Le composant MyBlock reçoit des props (title, description, imageUrl)
-export default function BigProject({ Branding, Project, imageUrl, TL, DescriptionText }) {
-  return (
-        <SemiBigProj>
+export default function BigProject({ to, Branding, Project, imageUrl, TL, DescriptionText }) {
+    return (
+        <SemiBigProj href={to}>
             <Credit>
                 <Type>
                     <p className='Small-text'>Type</p>
@@ -53,8 +54,8 @@ export default function BigProject({ Branding, Project, imageUrl, TL, Descriptio
                 </Type>
             </Credit>
             <SemiPhoto>
-            {imageUrl && <img className='ImgSemi' src={imageUrl}  />}
-            
+                {imageUrl && <img className='ImgSemi' src={imageUrl} />}
+
             </SemiPhoto>
             <Description>
                 <ProjTil>
@@ -65,5 +66,5 @@ export default function BigProject({ Branding, Project, imageUrl, TL, Descriptio
 
             </Description>
         </SemiBigProj>
-  )
+    )
 }
