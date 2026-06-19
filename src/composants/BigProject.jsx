@@ -28,21 +28,38 @@ align-items: center;
 align-self: stretch;
 `
 const SemiPhoto = styled.div`
-
+  width: 100%;
+  overflow: hidden;
+  border-radius: 4px;
+  background-color: #f0f0f0;
 `
 
-const SemiBigProj = styled.a`
+const ImageContainer = styled.img`
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.8s cubic-bezier(0.16, 1, 0.3, 1), filter 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+`
+
+const SemiBigProj = styled(Link)`
 display: flex;
 width : 100%;
 flex-direction: column;
 align-items: flex-start;
 gap: 6px;
+text-decoration: none;
+color: inherit;
+
+&:hover ${ImageContainer} {
+  transform: scale(1.03);
+  filter: brightness(0.95);
+}
 `
 
 // Le composant MyBlock reçoit des props (title, description, imageUrl)
 export default function BigProject({ to, Branding, Project, imageUrl, TL, DescriptionText }) {
     return (
-        <SemiBigProj href={to}>
+        <SemiBigProj to={to || '#'}>
             <Credit>
                 <Type>
                     <p className='Small-text'>Type</p>
@@ -54,7 +71,7 @@ export default function BigProject({ to, Branding, Project, imageUrl, TL, Descri
                 </Type>
             </Credit>
             <SemiPhoto>
-                {imageUrl && <img className='ImgSemi' src={imageUrl} />}
+                {imageUrl && <ImageContainer src={imageUrl} alt={Project} />}
 
             </SemiPhoto>
             <Description>
