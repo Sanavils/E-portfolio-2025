@@ -1,14 +1,14 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import styled from 'styled-components'
 import MidProject from '../composants/MidProject'
 import SmallProject from '../composants/SmallProject'
 import BigProject from '../composants/BigProject'
+import gsap from 'gsap'
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
 
+gsap.registerPlugin(ScrollTrigger)
 
-export default function Work() {
-
-
-    const TwoProj = styled.div`
+const TwoProj = styled.div`
 display: flex;
 justify-content: space-between;
 align-items: flex-start;
@@ -20,11 +20,11 @@ align-self: stretch;
 }
 `
 
-    const ThreeProj = styled.div`
+const ThreeProj = styled.div`
 display: flex;
 justify-content: space-between;
 align-items: flex-start;
-align-self: stretch;;
+align-self: stretch;
 
 @media (max-width: 768px) {
   flex-direction: column;
@@ -32,6 +32,30 @@ align-self: stretch;;
 }
 `
 
+export default function Work() {
+
+    useEffect(() => {
+        // Stagger project cards when entering viewport
+        gsap.fromTo('.zonning > div > a, .zonning > a',
+            { opacity: 0, y: 50 },
+            {
+                opacity: 1,
+                y: 0,
+                duration: 1,
+                stagger: 0.12,
+                ease: 'power3.out',
+                scrollTrigger: {
+                    trigger: '.zonning',
+                    start: 'top 85%',
+                    toggleActions: 'play none none none'
+                }
+            }
+        )
+
+        return () => {
+            ScrollTrigger.getAll().forEach(t => t.kill())
+        }
+    }, [])
 
     return (
         <>
@@ -41,7 +65,7 @@ align-self: stretch;;
 
                 <TwoProj>
                     <MidProject
-                        to="/E-portfolio-2025/work/Abercrombie"
+                        to="/work/abercrombie"
                         Branding="Branding"
                         Project="Abercrombie"
                         imageUrl="./Abercrombie-v2.png"
@@ -50,7 +74,7 @@ align-self: stretch;;
                     />
 
                     <MidProject
-                        to="/E-portfolio-2025/work/Scentify"
+                        to="/work/Scentify"
                         Branding="Branding"
                         Project="Scentify"
                         imageUrl="./Scientify.png"
@@ -62,7 +86,7 @@ align-self: stretch;;
 
                 <ThreeProj>
                     <SmallProject
-                        to="/E-portfolio-2025/work/Serenity"
+                        to="/work/Serenity"
                         Branding="Branding"
                         Project="Serenity"
                         imageUrl="./Serinity.png"
@@ -71,7 +95,7 @@ align-self: stretch;;
                     />
 
                     <SmallProject
-                        to="/E-portfolio-2025/work/Abercombie_V2"
+                        to="/work/abercombie_V2"
                         Branding="Branding"
                         Project="Abercrombie V2"
                         imageUrl="./Abercrombie.png"
@@ -81,7 +105,7 @@ align-self: stretch;;
 
 
                     <SmallProject
-                        to="/E-portfolio-2025/work/Abercombie_V2"
+                        to="/work/Okane"
                         Branding="Branding"
                         Project="Okane"
                         imageUrl="./Okane.png"
@@ -92,7 +116,7 @@ align-self: stretch;;
                 </ThreeProj>
 
                 <BigProject
-                    to="/E-portfolio-2025/work/Vanilla"
+                    to="/work/Vanilla"
                     Branding="Branding"
                     Project="Vanilla"
                     imageUrl="./image copy 2.png"
@@ -101,18 +125,6 @@ align-self: stretch;;
                 />
 
             </div>
-
-
-
-
-
-
-
-
-
         </>
-
-
     )
-
 }
